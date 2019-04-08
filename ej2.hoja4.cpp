@@ -1,5 +1,5 @@
 //Ejercicio 2
-//Calcular el monot a pagar segun el sexo y edad de la persona
+//Calcular el monto a pagar segun el sexo y edad de la persona
 
 #include <iostream>
 #include <conio.h>
