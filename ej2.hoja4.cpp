@@ -4,6 +4,7 @@
 #include <iostream>
 #include <conio.h>
 #include <stdio.h>
+#include <string>
 
 using namespace System;
 using namespace std;
@@ -17,13 +18,13 @@ int monto4 = 500;
 
 int main()
 {
-	int s;
+	string s;
 	int e;
 
-	printf("Indique cual es su sexo: Hombre = 1, Mujer = 2\n");
+	printf("Indique cual es su sexo: Hombre = 'M', Mujer = 'F'\n");
 	cin >> s;
 
-	if (s == 1)
+	if (s == "M")
 	{
 		cout << "Su pago se rige bajo los precios de hombres\n";
 		printf("Indique su edad:\n");
@@ -31,14 +32,14 @@ int main()
 
 		if (e < 25)
 		{
-			cout << "Usted debe pagar:" << monto1 << "soles" << endl;
+			cout << "Usted debe pagar:" << monto1 << " soles" << endl;
 		}
 		else
 		{
-			cout << "Usted debe pagar:" << monto2 << "soles" << endl;
+			cout << "Usted debe pagar:" << monto2 << " soles" << endl;
 		}
 	}
-	if (s == 2)
+	if (s == "F")
 	{
 		cout << "Su tarifa se rige bajo los precios de mujeres\n";
 		printf("Indique su edad:\n");
@@ -46,11 +47,11 @@ int main()
 
 		if (e < 21)
 		{
-			cout << "Usted debe pagar:" << monto3 << "soles" << endl;
+			cout << "Usted debe pagar:" << monto3 << " soles" << endl;
 		}
 		else
 		{
-			cout << "Usted debe pagar:" << monto4 << "soles" << endl;
+			cout << "Usted debe pagar:" << monto4 << " soles" << endl;
 		}
 	}
 
